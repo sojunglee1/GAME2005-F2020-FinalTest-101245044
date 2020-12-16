@@ -107,19 +107,17 @@ extern void RigidBody3D_Update_m3D6DA3828170A108DBB3C975BD8F20D5E4CB053E (void);
 extern void RigidBody3D_Stop_m93AF20148AEA68D37576B193A472B899C51B9C50 (void);
 // 0x0000002C System.Void RigidBody3D::.ctor()
 extern void RigidBody3D__ctor_m6236538F1E03D2B69025F9EB8FE9C63DACF50F70 (void);
-// 0x0000002D System.Void SceneManager::Start()
-extern void SceneManager_Start_mF14A5BA2C44591BBA39D37F07E748198031FE52D (void);
-// 0x0000002E System.Void SceneManager::Update()
-extern void SceneManager_Update_m2D47A8ED56980C7768DB6B9AA4CA3EA7812967B4 (void);
-// 0x0000002F System.Void SceneManager::.ctor()
+// 0x0000002D System.Void SceneManager::GoToMain()
+extern void SceneManager_GoToMain_mE7ED7319EDF671360308368035B9EA7FBAFC229C (void);
+// 0x0000002E System.Void SceneManager::.ctor()
 extern void SceneManager__ctor_m50993E4C2BC958CFCF84678FE3A8304E1CF795BC (void);
-// 0x00000030 System.Void CollisionManager_<>c__DisplayClass7_0::.ctor()
+// 0x0000002F System.Void CollisionManager_<>c__DisplayClass7_0::.ctor()
 extern void U3CU3Ec__DisplayClass7_0__ctor_m5343F51364B1607BDE213D35B62F1490C86189BF (void);
-// 0x00000031 System.Boolean CollisionManager_<>c__DisplayClass7_0::<CheckAABBs>b__0(Contact)
+// 0x00000030 System.Boolean CollisionManager_<>c__DisplayClass7_0::<CheckAABBs>b__0(Contact)
 extern void U3CU3Ec__DisplayClass7_0_U3CCheckAABBsU3Eb__0_mEF40C164582B6A36D92A83236B7CA8CF1324F053 (void);
-// 0x00000032 System.Boolean CollisionManager_<>c__DisplayClass7_0::<CheckAABBs>b__1(Contact)
+// 0x00000031 System.Boolean CollisionManager_<>c__DisplayClass7_0::<CheckAABBs>b__1(Contact)
 extern void U3CU3Ec__DisplayClass7_0_U3CCheckAABBsU3Eb__1_m7B38D689F079E6BD453AFBE6D553BE4D3294E4AC (void);
-static Il2CppMethodPointer s_methodPointers[50] = 
+static Il2CppMethodPointer s_methodPointers[49] = 
 {
 	BulletBehaviour_Start_m5642687B5128E10D9A7D16C5EF2EC0A356988FE7,
 	BulletBehaviour_Update_mA98CE34BAA1306453A0FF8C3FB093303E07E215B,
@@ -165,14 +163,13 @@ static Il2CppMethodPointer s_methodPointers[50] =
 	RigidBody3D_Update_m3D6DA3828170A108DBB3C975BD8F20D5E4CB053E,
 	RigidBody3D_Stop_m93AF20148AEA68D37576B193A472B899C51B9C50,
 	RigidBody3D__ctor_m6236538F1E03D2B69025F9EB8FE9C63DACF50F70,
-	SceneManager_Start_mF14A5BA2C44591BBA39D37F07E748198031FE52D,
-	SceneManager_Update_m2D47A8ED56980C7768DB6B9AA4CA3EA7812967B4,
+	SceneManager_GoToMain_mE7ED7319EDF671360308368035B9EA7FBAFC229C,
 	SceneManager__ctor_m50993E4C2BC958CFCF84678FE3A8304E1CF795BC,
 	U3CU3Ec__DisplayClass7_0__ctor_m5343F51364B1607BDE213D35B62F1490C86189BF,
 	U3CU3Ec__DisplayClass7_0_U3CCheckAABBsU3Eb__0_mEF40C164582B6A36D92A83236B7CA8CF1324F053,
 	U3CU3Ec__DisplayClass7_0_U3CCheckAABBsU3Eb__1_m7B38D689F079E6BD453AFBE6D553BE4D3294E4AC,
 };
-static const int32_t s_InvokerIndices[50] = 
+static const int32_t s_InvokerIndices[49] = 
 {
 	23,
 	23,
@@ -182,7 +179,7 @@ static const int32_t s_InvokerIndices[50] =
 	23,
 	23,
 	23,
-	1731,
+	1735,
 	114,
 	26,
 	23,
@@ -221,7 +218,6 @@ static const int32_t s_InvokerIndices[50] =
 	23,
 	23,
 	23,
-	23,
 	9,
 	9,
 };
@@ -229,7 +225,7 @@ extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	50,
+	49,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,
