@@ -64,6 +64,10 @@ public class CubeBehaviour : MonoBehaviour
     public Bounds bounds;
     public bool isGrounded;
 
+    public Vector3 collisionNormal;
+    
+    public float penetration;
+
 
     // Start is called before the first frame update
     void Start()

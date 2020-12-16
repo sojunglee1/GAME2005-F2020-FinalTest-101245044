@@ -11,6 +11,8 @@ public class CollisionManager : MonoBehaviour
 
     private static Vector3[] faces;
 
+    public Vector3 direction;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -96,6 +98,7 @@ public class CollisionManager : MonoBehaviour
 
             s.penetration = penetration;
             s.collisionNormal = face;
+            
             //s.isColliding = true;
 
             
@@ -158,6 +161,8 @@ public class CollisionManager : MonoBehaviour
             contactB.face = face;
             contactB.penetration = penetration;
 
+            b.penetration = penetration;
+            b.collisionNormal = face;
 
             // check if contact does not exist
             if (!a.contacts.Contains(contactB))
@@ -176,7 +181,8 @@ public class CollisionManager : MonoBehaviour
                     a.gameObject.GetComponent<RigidBody3D>().Stop();
                     a.isGrounded = true;
                 }
-                
+
+                Push(a, b);
 
                 // add the new contact
                 a.contacts.Add(contactB);
@@ -198,6 +204,30 @@ public class CollisionManager : MonoBehaviour
                     a.isGrounded = false;
                 }
             }
+        }
+    }
+
+    public static void Push(CubeBehaviour a, CubeBehaviour b)
+    {
+        if (a.name == "Player")
+        {
+            if (b.collisionNormal == Vector3.left)
+            {
+                b.transform.position += Vector3.left;
+            }
+            if (b.collisionNormal == Vector3.right)
+            {
+                b.transform.position += Vector3.right;
+            }
+            if(b.collisionNormal == Vector3.forward)
+            {
+                b.transform.position += Vector3.forward;
+            } 
+            if(b.collisionNormal == Vector3.back)
+            {
+                b.transform.position += Vector3.back;
+            }       
+      
         }
     }
 }
