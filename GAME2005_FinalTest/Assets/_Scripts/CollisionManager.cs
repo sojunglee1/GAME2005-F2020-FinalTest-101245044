@@ -209,7 +209,7 @@ public class CollisionManager : MonoBehaviour
 
     public static void Push(CubeBehaviour a, CubeBehaviour b)
     {
-        if (a.name == "Player")
+        if (a.name == "Player" && b.gameObject.GetComponent<RigidBody3D>().bodyType == BodyType.DYNAMIC)
         {
             if (b.collisionNormal == Vector3.left)
             {
