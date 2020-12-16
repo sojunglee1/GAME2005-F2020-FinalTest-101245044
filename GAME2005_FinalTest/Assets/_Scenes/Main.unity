@@ -1152,7 +1152,7 @@ MonoBehaviour:
   bullet: {fileID: 2898771445226466676, guid: dc05ecf40a596104686052b7abdee0d3, type: 3}
   fireRate: 100
   bulletManager: {fileID: 403008322}
-  speed: 100
+  speed: 25
   isGrounded: 0
   body: {fileID: 579480856}
   cube: {fileID: 579480855}
