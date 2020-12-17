@@ -181,6 +181,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!23 &138532430
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -379,6 +380,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &429080865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,6 +538,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &514360893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,6 +665,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!23 &526557354
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -788,6 +792,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &536637369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,6 +933,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!23 &545212523
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1090,6 +1096,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &579480856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1386,6 +1393,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &613454537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1585,6 +1593,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!23 &728642971
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1697,6 +1706,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &775101082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1823,6 +1833,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &795358357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1987,6 +1998,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!1 &852771468
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2043,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &852771470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2220,6 +2233,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &893925098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2239,6 +2253,49 @@ MonoBehaviour:
   isFalling: 0
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
+--- !u!1 &911809356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911809358}
+  - component: {fileID: 911809357}
+  m_Layer: 0
+  m_Name: Scene Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &911809357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911809356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbeb45d06a331af4e959da5c721a00b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &911809358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911809356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.41440463, y: 0.27570057, z: -0.284791}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1028281359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,6 +2354,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!23 &1028281362
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2409,6 +2467,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1031056707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2535,6 +2594,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1052724109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2661,6 +2721,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1101564118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2787,6 +2848,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1111398179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2927,6 +2989,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!23 &1114700285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3121,6 +3184,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1170046216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3322,6 +3386,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1240514471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3448,6 +3513,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1350143511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3656,6 +3722,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!1 &1436370686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3714,6 +3781,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!23 &1436370689
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3826,6 +3894,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1452794372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3952,6 +4021,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1726082412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4045,6 +4115,7 @@ GameObject:
   - component: {fileID: 1946791120}
   - component: {fileID: 1946791119}
   - component: {fileID: 1946791118}
+  - component: {fileID: 1946791121}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4100,6 +4171,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1946791121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946791117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbeb45d06a331af4e959da5c721a00b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1957707760
 GameObject:
   m_ObjectHideFlags: 0
@@ -4130,7 +4213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubes: []
-  spheres: []
   Cube_Bullets: []
   direction: {x: 0, y: 0, z: 0}
 --- !u!4 &1957707762
@@ -4191,6 +4273,7 @@ MonoBehaviour:
   isGrounded: 0
   collisionNormal: {x: 0, y: 0, z: 0}
   penetration: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1995450530
 MonoBehaviour:
   m_ObjectHideFlags: 0

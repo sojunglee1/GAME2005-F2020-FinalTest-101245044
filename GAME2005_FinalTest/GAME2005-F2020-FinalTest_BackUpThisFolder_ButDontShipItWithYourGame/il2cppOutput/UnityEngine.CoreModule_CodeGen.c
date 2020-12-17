@@ -997,10 +997,10 @@ extern void RenderTextureDescriptor__ctor_m320C821459C7856A088415334267C2963B270
 extern void RenderTextureDescriptor_SetOrClearRenderTextureCreationFlag_m33FD234885342E9D0C6450C90C0F2E1B6B6A1044_AdjustorThunk (void);
 // 0x000001F6 System.Void UnityEngine.RenderTextureDescriptor::.cctor()
 extern void RenderTextureDescriptor__cctor_mD4015195DE93496CA03515BD76A118751F6CB88F (void);
-// 0x000001F7 UnityEngine.CursorLockMode UnityEngine.Cursor::get_lockState()
+// 0x000001F7 System.Void UnityEngine.Cursor::set_visible(System.Boolean)
+extern void Cursor_set_visible_m4747F0DC20D06D1932EC740C5CCC738C1664903D (void);
+// 0x000001F8 UnityEngine.CursorLockMode UnityEngine.Cursor::get_lockState()
 extern void Cursor_get_lockState_mCE4888D80E92560908B4779FA38754B3864700C3 (void);
-// 0x000001F8 System.Void UnityEngine.Cursor::set_lockState(UnityEngine.CursorLockMode)
-extern void Cursor_set_lockState_mC0739186A04F4C278F02E8C1714D99B491E3A217 (void);
 // 0x000001F9 UnityEngine.ILogHandler UnityEngine.ILogger::get_logHandler()
 // 0x000001FA System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.Object)
 // 0x000001FB System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.Object,UnityEngine.Object)
@@ -3728,8 +3728,8 @@ static Il2CppMethodPointer s_methodPointers[1675] =
 	RenderTextureDescriptor__ctor_m320C821459C7856A088415334267C2963B270A9D_AdjustorThunk,
 	RenderTextureDescriptor_SetOrClearRenderTextureCreationFlag_m33FD234885342E9D0C6450C90C0F2E1B6B6A1044_AdjustorThunk,
 	RenderTextureDescriptor__cctor_mD4015195DE93496CA03515BD76A118751F6CB88F,
+	Cursor_set_visible_m4747F0DC20D06D1932EC740C5CCC738C1664903D,
 	Cursor_get_lockState_mCE4888D80E92560908B4779FA38754B3864700C3,
-	Cursor_set_lockState_mC0739186A04F4C278F02E8C1714D99B491E3A217,
 	NULL,
 	NULL,
 	NULL,
@@ -5406,8 +5406,8 @@ static const int32_t s_InvokerIndices[1675] =
 	468,
 	765,
 	3,
+	795,
 	131,
-	133,
 	14,
 	62,
 	322,

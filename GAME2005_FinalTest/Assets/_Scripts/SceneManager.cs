@@ -9,4 +9,19 @@ public class SceneManager : MonoBehaviour
     {
       UnityEngine.SceneManagement.SceneManager.LoadScene("Main", LoadSceneMode.Single);
     }
+
+    void Start ()
+    {
+        Cursor.visible = true;
+    }
+    private void Update() {
+         if (Input.GetKeyDown(KeyCode.P))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Start", LoadSceneMode.Single);
+        }
+    }
+
+
+
+
 }

@@ -111,21 +111,25 @@ extern void RigidBody3D_Stop_m93AF20148AEA68D37576B193A472B899C51B9C50 (void);
 extern void RigidBody3D__ctor_m6236538F1E03D2B69025F9EB8FE9C63DACF50F70 (void);
 // 0x0000002E System.Void SceneManager::GoToMain()
 extern void SceneManager_GoToMain_mE7ED7319EDF671360308368035B9EA7FBAFC229C (void);
-// 0x0000002F System.Void SceneManager::.ctor()
+// 0x0000002F System.Void SceneManager::Start()
+extern void SceneManager_Start_mF14A5BA2C44591BBA39D37F07E748198031FE52D (void);
+// 0x00000030 System.Void SceneManager::Update()
+extern void SceneManager_Update_m2D47A8ED56980C7768DB6B9AA4CA3EA7812967B4 (void);
+// 0x00000031 System.Void SceneManager::.ctor()
 extern void SceneManager__ctor_m50993E4C2BC958CFCF84678FE3A8304E1CF795BC (void);
-// 0x00000030 System.Void CollisionManager_<>c__DisplayClass6_0::.ctor()
+// 0x00000032 System.Void CollisionManager_<>c__DisplayClass6_0::.ctor()
 extern void U3CU3Ec__DisplayClass6_0__ctor_m8B7F3880AF53FE4FF78F31834E41A6320F1F2278 (void);
-// 0x00000031 System.Boolean CollisionManager_<>c__DisplayClass6_0::<CheckBulletAABB>b__0(Contact)
+// 0x00000033 System.Boolean CollisionManager_<>c__DisplayClass6_0::<CheckBulletAABB>b__0(Contact)
 extern void U3CU3Ec__DisplayClass6_0_U3CCheckBulletAABBU3Eb__0_mCD104CC4A8EC0CBFC84CA8816FE5684F6D1DFA16 (void);
-// 0x00000032 System.Boolean CollisionManager_<>c__DisplayClass6_0::<CheckBulletAABB>b__1(Contact)
+// 0x00000034 System.Boolean CollisionManager_<>c__DisplayClass6_0::<CheckBulletAABB>b__1(Contact)
 extern void U3CU3Ec__DisplayClass6_0_U3CCheckBulletAABBU3Eb__1_m5F44CB048CE8FB08B47F6FE76B5609A8ECAA124E (void);
-// 0x00000033 System.Void CollisionManager_<>c__DisplayClass8_0::.ctor()
+// 0x00000035 System.Void CollisionManager_<>c__DisplayClass8_0::.ctor()
 extern void U3CU3Ec__DisplayClass8_0__ctor_m2F5B9B870DCA49315D9791B9CEEFFCAF2044234F (void);
-// 0x00000034 System.Boolean CollisionManager_<>c__DisplayClass8_0::<CheckCubeAABB>b__0(Contact)
+// 0x00000036 System.Boolean CollisionManager_<>c__DisplayClass8_0::<CheckCubeAABB>b__0(Contact)
 extern void U3CU3Ec__DisplayClass8_0_U3CCheckCubeAABBU3Eb__0_m23BEE5E5AEA97BB3958E0F4B1F4343EDFF44B563 (void);
-// 0x00000035 System.Boolean CollisionManager_<>c__DisplayClass8_0::<CheckCubeAABB>b__1(Contact)
+// 0x00000037 System.Boolean CollisionManager_<>c__DisplayClass8_0::<CheckCubeAABB>b__1(Contact)
 extern void U3CU3Ec__DisplayClass8_0_U3CCheckCubeAABBU3Eb__1_m11379DB283C9A399A0F31F82A80EC186E7F4144A (void);
-static Il2CppMethodPointer s_methodPointers[53] = 
+static Il2CppMethodPointer s_methodPointers[55] = 
 {
 	BulletBehaviour_Start_m5642687B5128E10D9A7D16C5EF2EC0A356988FE7,
 	BulletBehaviour_Update_mA98CE34BAA1306453A0FF8C3FB093303E07E215B,
@@ -173,6 +177,8 @@ static Il2CppMethodPointer s_methodPointers[53] =
 	RigidBody3D_Stop_m93AF20148AEA68D37576B193A472B899C51B9C50,
 	RigidBody3D__ctor_m6236538F1E03D2B69025F9EB8FE9C63DACF50F70,
 	SceneManager_GoToMain_mE7ED7319EDF671360308368035B9EA7FBAFC229C,
+	SceneManager_Start_mF14A5BA2C44591BBA39D37F07E748198031FE52D,
+	SceneManager_Update_m2D47A8ED56980C7768DB6B9AA4CA3EA7812967B4,
 	SceneManager__ctor_m50993E4C2BC958CFCF84678FE3A8304E1CF795BC,
 	U3CU3Ec__DisplayClass6_0__ctor_m8B7F3880AF53FE4FF78F31834E41A6320F1F2278,
 	U3CU3Ec__DisplayClass6_0_U3CCheckBulletAABBU3Eb__0_mCD104CC4A8EC0CBFC84CA8816FE5684F6D1DFA16,
@@ -181,7 +187,7 @@ static Il2CppMethodPointer s_methodPointers[53] =
 	U3CU3Ec__DisplayClass8_0_U3CCheckCubeAABBU3Eb__0_m23BEE5E5AEA97BB3958E0F4B1F4343EDFF44B563,
 	U3CU3Ec__DisplayClass8_0_U3CCheckCubeAABBU3Eb__1_m11379DB283C9A399A0F31F82A80EC186E7F4144A,
 };
-static const int32_t s_InvokerIndices[53] = 
+static const int32_t s_InvokerIndices[55] = 
 {
 	23,
 	23,
@@ -231,6 +237,8 @@ static const int32_t s_InvokerIndices[53] =
 	23,
 	23,
 	23,
+	23,
+	23,
 	9,
 	9,
 	23,
@@ -241,7 +249,7 @@ extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	53,
+	55,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,
