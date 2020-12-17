@@ -5586,10 +5586,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerBehaviour__Fire_mFC9D21EEB92171EDD
 		}
 	}
 	{
-		// if ((Time.frameCount*5) % fireRate == 0)
+		// if ((Time.frameCount*2) % fireRate == 0)
 		int32_t L_1 = Time_get_frameCount_m8601F5FB5B701680076B40D2F31405F304D963F0(/*hidden argument*/NULL);
 		int32_t L_2 = __this->get_fireRate_6();
-		if (((int32_t)((int32_t)((int32_t)il2cpp_codegen_multiply((int32_t)L_1, (int32_t)5))%(int32_t)L_2)))
+		if (((int32_t)((int32_t)((int32_t)il2cpp_codegen_multiply((int32_t)L_1, (int32_t)2))%(int32_t)L_2)))
 		{
 			goto IL_0066;
 		}
