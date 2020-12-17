@@ -14,6 +14,15 @@ public class BulletBehaviour : MonoBehaviour
     public Vector3 collisionNormal;
     public float penetration;
 
+    // Added Cube Properties to Bullet
+    public Vector3 max;
+    public Vector3 min;
+    public Bounds bounds;
+    public List<Contact> contacts;
+    public Vector3 size;
+    public bool isGrounded;
+
+
     public BulletManager bulletManager;
 
     // Start is called before the first frame update
@@ -22,6 +31,8 @@ public class BulletBehaviour : MonoBehaviour
         isColliding = false;
         radius = Mathf.Max(transform.localScale.x, transform.localScale.y, transform.localScale.z) * 0.5f;
         bulletManager = FindObjectOfType<BulletManager>();
+
+        size = bounds.size;
     }
 
     // Update is called once per frame
@@ -29,6 +40,9 @@ public class BulletBehaviour : MonoBehaviour
     {
         _Move();
         _CheckBounds();
+
+        max = Vector3.Scale(bounds.max, transform.localScale) + transform.position;
+        min = Vector3.Scale(bounds.min, transform.localScale) + transform.position;
     }
 
     private void _Move()

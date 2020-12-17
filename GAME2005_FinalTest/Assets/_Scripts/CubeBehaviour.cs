@@ -67,8 +67,9 @@ public class CubeBehaviour : MonoBehaviour
     public Vector3 collisionNormal;
     
     public float penetration;
-
-
+    public Vector3 direction;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
