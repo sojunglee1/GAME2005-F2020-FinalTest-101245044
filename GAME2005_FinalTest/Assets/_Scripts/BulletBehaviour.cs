@@ -20,7 +20,7 @@ public class BulletBehaviour : MonoBehaviour
     public Bounds bounds;
     public List<Contact> contacts;
     public Vector3 size;
-    public bool isGrounded;
+    private MeshFilter meshFilter;
 
 
     public BulletManager bulletManager;
@@ -29,10 +29,12 @@ public class BulletBehaviour : MonoBehaviour
     void Start()
     {
         isColliding = false;
+        debug = false;
         radius = Mathf.Max(transform.localScale.x, transform.localScale.y, transform.localScale.z) * 0.5f;
         bulletManager = FindObjectOfType<BulletManager>();
 
-        size = bounds.size;
+        meshFilter = GetComponent<MeshFilter>();
+        bounds = meshFilter.mesh.bounds;
     }
 
     // Update is called once per frame
@@ -40,14 +42,14 @@ public class BulletBehaviour : MonoBehaviour
     {
         _Move();
         _CheckBounds();
-
-        max = Vector3.Scale(bounds.max, transform.localScale) + transform.position;
-        min = Vector3.Scale(bounds.min, transform.localScale) + transform.position;
     }
 
     private void _Move()
     {
         transform.position += direction * speed * Time.deltaTime;
+        max = Vector3.Scale(bounds.max, transform.localScale) + transform.position;
+        min = Vector3.Scale(bounds.min, transform.localScale) + transform.position;
+
     }
 
     private void _CheckBounds()

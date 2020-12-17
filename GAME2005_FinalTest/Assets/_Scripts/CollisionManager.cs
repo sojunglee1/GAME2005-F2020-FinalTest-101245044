@@ -110,13 +110,12 @@ public class CollisionManager : MonoBehaviour
                         a.contacts.RemoveAt(i);
                     }
                 }
-
+                
                 // add the new contact
                 a.contacts.Add(contactB);
                 a.isColliding = true;
 
                 Reflect(a);
-                
             }
         }
         else

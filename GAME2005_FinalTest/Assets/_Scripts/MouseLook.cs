@@ -33,8 +33,8 @@ public class MouseLook : MonoBehaviour
         // Ensure the cursor is always locked when set
         if (lockCursor)
         {
-            //Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
         }
 
         // Allow the script to clamp based on a desired target value.

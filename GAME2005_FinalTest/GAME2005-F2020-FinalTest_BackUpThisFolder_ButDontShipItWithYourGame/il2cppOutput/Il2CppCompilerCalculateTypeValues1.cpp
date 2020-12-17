@@ -28541,8 +28541,10 @@ public:
 	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___size_16;
 	// System.Boolean BulletBehaviour::isGrounded
 	bool ___isGrounded_17;
+	// UnityEngine.MeshFilter BulletBehaviour::meshFilter
+	MeshFilter_t763BB2BBF3881176AD25E4570E6DD215BA0AA51A * ___meshFilter_18;
 	// BulletManager BulletBehaviour::bulletManager
-	BulletManager_tE558AAB4A93BA344A15078280F69D4F8DBD88F27 * ___bulletManager_18;
+	BulletManager_tE558AAB4A93BA344A15078280F69D4F8DBD88F27 * ___bulletManager_19;
 
 public:
 	inline static int32_t get_offset_of_speed_4() { return static_cast<int32_t>(offsetof(BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623, ___speed_4)); }
@@ -28658,13 +28660,22 @@ public:
 		___isGrounded_17 = value;
 	}
 
-	inline static int32_t get_offset_of_bulletManager_18() { return static_cast<int32_t>(offsetof(BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623, ___bulletManager_18)); }
-	inline BulletManager_tE558AAB4A93BA344A15078280F69D4F8DBD88F27 * get_bulletManager_18() const { return ___bulletManager_18; }
-	inline BulletManager_tE558AAB4A93BA344A15078280F69D4F8DBD88F27 ** get_address_of_bulletManager_18() { return &___bulletManager_18; }
-	inline void set_bulletManager_18(BulletManager_tE558AAB4A93BA344A15078280F69D4F8DBD88F27 * value)
+	inline static int32_t get_offset_of_meshFilter_18() { return static_cast<int32_t>(offsetof(BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623, ___meshFilter_18)); }
+	inline MeshFilter_t763BB2BBF3881176AD25E4570E6DD215BA0AA51A * get_meshFilter_18() const { return ___meshFilter_18; }
+	inline MeshFilter_t763BB2BBF3881176AD25E4570E6DD215BA0AA51A ** get_address_of_meshFilter_18() { return &___meshFilter_18; }
+	inline void set_meshFilter_18(MeshFilter_t763BB2BBF3881176AD25E4570E6DD215BA0AA51A * value)
 	{
-		___bulletManager_18 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___bulletManager_18), (void*)value);
+		___meshFilter_18 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___meshFilter_18), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_bulletManager_19() { return static_cast<int32_t>(offsetof(BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623, ___bulletManager_19)); }
+	inline BulletManager_tE558AAB4A93BA344A15078280F69D4F8DBD88F27 * get_bulletManager_19() const { return ___bulletManager_19; }
+	inline BulletManager_tE558AAB4A93BA344A15078280F69D4F8DBD88F27 ** get_address_of_bulletManager_19() { return &___bulletManager_19; }
+	inline void set_bulletManager_19(BulletManager_tE558AAB4A93BA344A15078280F69D4F8DBD88F27 * value)
+	{
+		___bulletManager_19 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___bulletManager_19), (void*)value);
 	}
 };
 
@@ -43992,7 +44003,7 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2786;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize2786 = { sizeof (U3CModuleU3E_tFDCAFCBB4B3431CFF2DC4D3E03FBFDF54EFF7E9A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2787;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize2787 = { sizeof (BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2787[15] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2787[16] = 
 {
 	BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623::get_offset_of_speed_4(),
 	BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623::get_offset_of_direction_5(),
@@ -44008,7 +44019,8 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2787[15] =
 	BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623::get_offset_of_contacts_15(),
 	BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623::get_offset_of_size_16(),
 	BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623::get_offset_of_isGrounded_17(),
-	BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623::get_offset_of_bulletManager_18(),
+	BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623::get_offset_of_meshFilter_18(),
+	BulletBehaviour_tF743161DCB1DD1FC1489E90A5031B237DB33F623::get_offset_of_bulletManager_19(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2788;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize2788 = { sizeof (BulletManager_tE558AAB4A93BA344A15078280F69D4F8DBD88F27), -1, 0, 0 };
