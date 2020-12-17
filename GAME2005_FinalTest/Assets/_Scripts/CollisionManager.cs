@@ -11,8 +11,6 @@ public class CollisionManager : MonoBehaviour
 
     private static Vector3[] faces;
 
-    public Vector3 direction;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +29,6 @@ public class CollisionManager : MonoBehaviour
     {
         Cube_Bullets = FindObjectsOfType<BulletBehaviour>();
 
-        
         // check each AABB with every other AABB in the scene
         for (int i = 0; i < cubes.Length; i++)
         {
