@@ -117,19 +117,13 @@ extern void SceneManager_Start_mF14A5BA2C44591BBA39D37F07E748198031FE52D (void);
 extern void SceneManager_Update_m2D47A8ED56980C7768DB6B9AA4CA3EA7812967B4 (void);
 // 0x00000031 System.Void SceneManager::.ctor()
 extern void SceneManager__ctor_m50993E4C2BC958CFCF84678FE3A8304E1CF795BC (void);
-// 0x00000032 System.Void CollisionManager_<>c__DisplayClass5_0::.ctor()
-extern void U3CU3Ec__DisplayClass5_0__ctor_mF2DAFE95EA326B777FA4790C176C0A99F09F31F2 (void);
-// 0x00000033 System.Boolean CollisionManager_<>c__DisplayClass5_0::<CheckBulletAABB>b__0(Contact)
-extern void U3CU3Ec__DisplayClass5_0_U3CCheckBulletAABBU3Eb__0_m43987CB4B5002CBC0E6BD6D315F1E77D25E92E21 (void);
-// 0x00000034 System.Boolean CollisionManager_<>c__DisplayClass5_0::<CheckBulletAABB>b__1(Contact)
-extern void U3CU3Ec__DisplayClass5_0_U3CCheckBulletAABBU3Eb__1_m729720FE3AC88458CB4CE555262BC12FA7592E61 (void);
-// 0x00000035 System.Void CollisionManager_<>c__DisplayClass7_0::.ctor()
+// 0x00000032 System.Void CollisionManager_<>c__DisplayClass7_0::.ctor()
 extern void U3CU3Ec__DisplayClass7_0__ctor_m5343F51364B1607BDE213D35B62F1490C86189BF (void);
-// 0x00000036 System.Boolean CollisionManager_<>c__DisplayClass7_0::<CheckCubeAABB>b__0(Contact)
+// 0x00000033 System.Boolean CollisionManager_<>c__DisplayClass7_0::<CheckCubeAABB>b__0(Contact)
 extern void U3CU3Ec__DisplayClass7_0_U3CCheckCubeAABBU3Eb__0_mAEA06FD0C259E78953BF725615C8F0E9016ADDED (void);
-// 0x00000037 System.Boolean CollisionManager_<>c__DisplayClass7_0::<CheckCubeAABB>b__1(Contact)
+// 0x00000034 System.Boolean CollisionManager_<>c__DisplayClass7_0::<CheckCubeAABB>b__1(Contact)
 extern void U3CU3Ec__DisplayClass7_0_U3CCheckCubeAABBU3Eb__1_mDBAB00A89C1CE6B13714654F87D5A350B296E255 (void);
-static Il2CppMethodPointer s_methodPointers[55] = 
+static Il2CppMethodPointer s_methodPointers[52] = 
 {
 	BulletBehaviour_Start_m5642687B5128E10D9A7D16C5EF2EC0A356988FE7,
 	BulletBehaviour_Update_mA98CE34BAA1306453A0FF8C3FB093303E07E215B,
@@ -180,14 +174,11 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	SceneManager_Start_mF14A5BA2C44591BBA39D37F07E748198031FE52D,
 	SceneManager_Update_m2D47A8ED56980C7768DB6B9AA4CA3EA7812967B4,
 	SceneManager__ctor_m50993E4C2BC958CFCF84678FE3A8304E1CF795BC,
-	U3CU3Ec__DisplayClass5_0__ctor_mF2DAFE95EA326B777FA4790C176C0A99F09F31F2,
-	U3CU3Ec__DisplayClass5_0_U3CCheckBulletAABBU3Eb__0_m43987CB4B5002CBC0E6BD6D315F1E77D25E92E21,
-	U3CU3Ec__DisplayClass5_0_U3CCheckBulletAABBU3Eb__1_m729720FE3AC88458CB4CE555262BC12FA7592E61,
 	U3CU3Ec__DisplayClass7_0__ctor_m5343F51364B1607BDE213D35B62F1490C86189BF,
 	U3CU3Ec__DisplayClass7_0_U3CCheckCubeAABBU3Eb__0_mAEA06FD0C259E78953BF725615C8F0E9016ADDED,
 	U3CU3Ec__DisplayClass7_0_U3CCheckCubeAABBU3Eb__1_mDBAB00A89C1CE6B13714654F87D5A350B296E255,
 };
-static const int32_t s_InvokerIndices[55] = 
+static const int32_t s_InvokerIndices[52] = 
 {
 	23,
 	23,
@@ -241,15 +232,12 @@ static const int32_t s_InvokerIndices[55] =
 	23,
 	9,
 	9,
-	23,
-	9,
-	9,
 };
 extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	55,
+	52,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

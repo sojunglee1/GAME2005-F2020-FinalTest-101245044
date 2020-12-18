@@ -80,7 +80,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (Input.GetAxisRaw("Fire1") > 0.0f)
         {
             // delays firing
-            if ((Time.frameCount*2) % fireRate == 0)
+            if ((Time.frameCount*4) % fireRate == 0)
             {
                 Debug.Log("Mouse Clicked!");
 
