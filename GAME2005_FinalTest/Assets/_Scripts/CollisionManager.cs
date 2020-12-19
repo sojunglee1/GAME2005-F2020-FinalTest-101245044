@@ -178,12 +178,11 @@ public class CollisionManager : MonoBehaviour
                     a.isGrounded = true;
                 }
 
-                Push(a, b);
-
                 // add the new contact
                 a.contacts.Add(contactB);
                 a.isColliding = true; 
                 
+                Push(a, b);
             }
         }
         else
@@ -210,19 +209,24 @@ public class CollisionManager : MonoBehaviour
             if (b.collisionNormal == Vector3.left)
             {
                 b.transform.position += Vector3.left;
+                b.transform.position = new Vector3(b.transform.position.x, b.transform.position.y + 0.1f, b.transform.position.z);
             }
-            if (b.collisionNormal == Vector3.right)
+            else if (b.collisionNormal == Vector3.right)
             {
                 b.transform.position += Vector3.right;
+                b.transform.position = new Vector3(b.transform.position.x, b.transform.position.y + 0.1f, b.transform.position.z);
             }
-            if(b.collisionNormal == Vector3.forward)
+            else if(b.collisionNormal == Vector3.forward)
             {
                 b.transform.position += Vector3.forward;
+                b.transform.position = new Vector3(b.transform.position.x, b.transform.position.y + 0.1f, b.transform.position.z);
             } 
-            if(b.collisionNormal == Vector3.back)
+            else if(b.collisionNormal == Vector3.back)
             {
                 b.transform.position += Vector3.back;
-            }       
+                b.transform.position = new Vector3(b.transform.position.x, b.transform.position.y + 0.1f, b.transform.position.z);
+            }
+            //b.transform.position = new Vector3(b.transform.position.x, b.transform.position.y + 0.1f, b.transform.position.z);
       
         }
     }
